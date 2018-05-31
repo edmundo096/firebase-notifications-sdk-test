@@ -1,0 +1,11 @@
+{
+  "name": "notifications-sdk-test",
+  "version": "0.1.0",
+  "description": "Used to test notification sending to Firebase using its Node.js Admin SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edmundo Elizondo",
+  "license": "ISC"
+}
