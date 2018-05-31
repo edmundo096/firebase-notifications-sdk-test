@@ -18,7 +18,7 @@ admin.initializeApp({
 
 
 // ******************************************************************************
-// *** Set topic, and modify message                                          ***
+// *** Set topic, and modify message (Tip: data values can ONLY be strings)   ***
 // *** See more:                                                              ***
 // ***  https://firebase.google.com/docs/cloud-messaging/admin/send-messages  ***
 // ******************************************************************************
@@ -28,6 +28,10 @@ const topic = 'highScores';
 
 // See documentation on defining a message payload.
 const message = {
+  // notification: {
+  //   title: '',
+  //   body: '',
+  // },
   data: {
     score: '850',
     time: '2:45'
@@ -40,7 +44,9 @@ admin.messaging().send(message)
   .then((response) => {
     // Response is a message ID string.
     console.log('Successfully sent message:', response);
+    process.exit();
   })
   .catch((error) => {
     console.log('Error sending message:', error);
+    process.exit();
   });
