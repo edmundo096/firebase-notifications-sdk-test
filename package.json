@@ -4,8 +4,12 @@
   "description": "Used to test notification sending to Firebase using its Node.js Admin SDK",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Edmundo Elizondo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "firebase-admin": "^5.12.1"
+  }
 }
